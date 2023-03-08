@@ -1,0 +1,23 @@
+body {
+	font-family: Didot;
+	color: deeppink;
+	background-color:lightpink;
+	font-size: 50px;
+}
+
+p {
+	background-color: darkorange;
+	text-align: center;
+	font-weight: 900;
+}
+
+span {
+	color: rebeccapurple;
+	font-family: Helvetica;
+	font-style: oblique;
+
+}
+
+.test {
+	font-size: 200px;
+}

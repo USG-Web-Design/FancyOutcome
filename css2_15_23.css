@@ -1,0 +1,45 @@
+
+/* see photo on phone for padding/margin explaination*/
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1 {
+	background-color: tomato;
+	margin: 0;
+	padding: 30px;
+
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	text-decoration: none;
+	color: darkolivegreen;
+}
+
+li a:hover {
+	color: blanchedalmond;
+}
+
+li{
+	padding: 10px;
+	background-color: blanchedalmond;
+	font-size:20px;
+}
+
+.dropdownya {
+	display: none;
+}
+
+.dropdown:hover .dropdownya {
+	display: block;
+}
+
