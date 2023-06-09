@@ -1,0 +1,65 @@
+/* the body has margins on the left and right to create some space */
+body {
+	color: floralwhite;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+/*here you can see some of the style customizations on the title of the website*/
+h1 {
+	font-family: Menlo-BoldItalic;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	border-style: dotted;
+	border-width: 7px;
+	border-radius: 40px;
+	background-image: url("clouds copy.jpeg");
+	color: black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p {
+	font-family: AndaleMono;
+}
+
+iframe {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.headerz {
+	font-family: Menlo-BoldItalic;
+}
+/* This makes it so the information that will dropdown is hidden at first. Then, when it is hovered over, the block will be displayed*/
+.dropdownya {
+	display: none;
+}  
+
+.dropdown:hover .dropdownya {
+	display: block;
+}
+
+ul {
+	list-style-type: none;
+	margin-right: 50px;
+}
+/* this adds an underline and changes the color of the subheadings when you hover over them*/
+h2:hover {
+	text-decoration: underline;
+	color: darkgray;
+}
+
+h2 {
+	font-family: AndaleMono;
+}
+
+li {
+	font-family: AndaleMono;
+}
+

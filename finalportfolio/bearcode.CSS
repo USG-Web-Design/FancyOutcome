@@ -1,0 +1,30 @@
+img {
+	height: 7%;
+	width: 7%;
+	position: relative;
+	float: right;
+	transition: width .1s, height .1s, transform .1s;
+}
+
+p {
+	display: inline;
+	float: right;
+	position: absolute;
+ 	top: 12%;
+	right: 6%;
+	font-family: BMHANNAAirOTF;
+	color: white;
+
+}
+
+img:hover {
+  width: 8%;
+  height: 8%;}
+
+
+body {
+  margin: 4%;
+  margin-left: 1%;
+  background-image: url('background.jpeg');
+  background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;
+}

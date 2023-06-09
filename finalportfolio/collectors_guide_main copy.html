@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="collectors_guideCSS copy.css">
+	<title>Fashion Collector's Guide</title>
+</head>
+<body>
+	<!--The html of this main page is pretty simple. The only new addition is the anchors that take you to other html pages-->
+	<h1>Which Style is for You?</h1>
+
+	<ul>
+		<li>
+			<a id="1" href="./collectors_y2k copy.html "> Y2K</a>
+		</li>
+		<li>
+			<a href="./collecters_cottagecore copy.html"> CottageCore</a>
+		</li>
+		<li>
+			<a href="./collectors_preppy copy.html">Preppy</a>
+		</li>
+		<li>
+			<a href="./collectors_emo copy.html"> Emo </a>
+		</li>
+		<li>
+			<a href="./collectors_survey copy.html"> Survey </a>
+		</li>
+	</ul>
+	<br><br><br><br>
+	<p style="font-size: 20px;">https://pin.it/23Ij1MS</p>
+
+</body>
+<!--We added this JS to our collectors guide to practice using objects when we learned about them later in the semester-->
+<script type="text/javascript">
+	
+	class Styles {
+		constructor(e,m) {
+			this.era = e;
+			this.region = "USA";
+			this.material = m;
+		}
+
+		getEra(){
+			return this.era;
+		}
+	}
+
+	const emo = new Styles ("Y2K","leather");
+
+	document.getElementById("1").innerHTML = emo.getEra();
+</script>
+</html>

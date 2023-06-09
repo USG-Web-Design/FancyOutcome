@@ -1,0 +1,248 @@
+<!--Project Checklist
+  -Comments on all projects
+  -Fill in descriptions
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="final.CSS" type="text/css" rel="stylesheet">
+    <title>Final Portfolio</title>
+  </head>
+  <body>
+
+<!-- this button is the back button. when it is clicked, everything will return to how it was when the website was first loaded-->
+  <button id="displayBack" onclick="letsGoBack();" class="backbuttonstyle"> <img class="backsize" src="finger.png"></button>
+  
+  <div id=displayTitle style="text-align: center;">
+      <h1> Hannah's Web Design Portfolio</h1>  
+      <img id="1" onclick="roar()" class="bear" src="bear.webp">
+      <p id="2"></p>
+      <h3> Welcome to my Web Design Portfolio! Scroll to see all of the projects from the semester. Click on any of them to access a larger version you can explore. The projects are listed in chronological  order, so hopefully you will see my improvement throughout the semester! <br>P.S. Click on the bear to show some love <3 <br> P.P.S. Full screen is recommended! </h3>
+  </div>
+
+<!---The divs below are the titles and bios of each website. Each one appears when the corresponding embedded website is clicked, and disappears when the back button is clicked.-->
+  <div id="describeReDr" class="bios">
+    <h2>Recurring Dream</h2>
+    <h3>The recurring dream project was the first homework assignment we had in Web Design class. We learned about h1 and p elements. </h3>
+  </div>
+  <div id="describeAbout" class="bios">
+    <h2>All About Me</h2>
+    <h3>This was our next homework assignment. This website displays some facts and basic information about me. We learned how to insert images, lists, and videos into our websites. This was also the first time I made style changes such as color and font.  </h3>
+  </div>
+  <div id="describeBeluga" class="bios">
+    <h2>My Favorite Animal - Beluga</h2>
+    <h3>This project displays some information and fun facts on my favorite animal: Belugas. This was the first project we did practicing using a CSS file. With CSS, we could control the style of certain elements, and also create classes to attach to multiple elements. My website includes an intro to Belugas, a photo gallery, some facts, and video of the baby beluga song.</h3>
+  </div>
+  <div id="describeLiPo" class="bios">
+    <h2>Environmental Call to Action</h2>
+    <h3>For our project calling action to an environmental issue, I chose to focus on Light Pollution. I continued to experiment with different styles in CSS. I set a background image to the header and added a rounded border around it. I also added a starry background image to the whole page. We learned how to add a hover function to elements in CSSm which I used to display the information on Light Pollution. </h3>
+  </div>
+  <div id="describeCollectors" class="bios">
+    <h2>Collector's Guide</h2>
+    <h3>I worked with Amy on this project to show some different fashion styles. We made different html pages for each style, and used anchors to link between pages. We also conducted a survey to see which style was the omst popular among AWS students and faculty.</h3>
+  </div> 
+  <div id="describeSpringtime" class="bios">
+    <h2>Guide to the PNW</h2>
+    <h3>This next project used much more complex CSS functions like animation, hovers, image settings, etc. This page share some fun activities to do in the area during the springtime. There is a Nature section with three activities to enjoy Washington's nature, and an Entertainment section with some indoor activities.</h3>
+  </div> 
+  <div id="describeBuzzfeed" class="bios">
+    <h2>Buzzfeed Quiz</h2>
+    <h3>I worked with Jaein on the project to create a buzzfeed style quiz that tells your which AWS Teacher you are most like. There are six questions that will determine whether you are most like Sidman, Considine, Barber, etc. We used javascript to make the quiz work. This project also uses two types of animations. </h3>
+  </div>  
+  <div id="describeFour" class="bios">
+    <h2>The Four Color Theorem</h2>
+    <h3>This is the newest website I made just for this webpage. It discusses what the Four Color Theorem is, which we learned about earlier in the semester. It contains information and background on the Theorem, and also includes a video and some coloring pages to try the theorem yourself.</h3>
+  </div>  
+
+  <br><br>
+
+<!--This big div contains all of the buttons on the home page. The click of one button makes all of the buttons disappear, along with a big embed version of the corresponding website show.-->
+
+    <div id="mainButtons">
+      <div class="columnleft">
+        <button class="mainbuttonstyle" onclick="openPage();showRecurring();"><img src="recurringdreambutton.png"></button>
+      </div>
+      <div class="columnright">
+        <button class="mainbuttonstyle" onclick="openPage();showAbout();"><img src="aboutmebutton.png"></button>
+      </div>
+      <div class="columnleft">
+        <button class="mainbuttonstyle" onclick="openPage();showBeluga();"><img src="belugabutton.png"></button>
+      </div>
+      <div class="columnright">
+        <button class="mainbuttonstyle" onclick="openPage();showLightPo();"><img src="LightPobutton.png"></button>
+      </div>
+       <div class="columnleft">
+        <button class="mainbuttonstyle" onclick="openPage();showCollectors();"><img src="collectorsbutton.png"></button>
+      </div>
+      <div class="columnright">
+        <button class="mainbuttonstyle" onclick="openPage();showSpringtime();"><img src="springtimebutton.png"></button>
+      </div>
+      <div class="columnleft">
+        <button class="mainbuttonstyle" onclick="openPage();showBuzzfeed();"><img src="buzzfeedbutton.png"></button>
+      </div>
+       <div class="columnright">
+        <button class="mainbuttonstyle" onclick="openPage();showFour();"><img src="FCTbutton.png"></button>
+      </div>
+      <div class="citationcolumn">
+        <button class="mainbuttonstyle" onclick="openPage();showCitations();"><h2>Citations</h2></button>
+      </div>
+    </div>
+
+<!-- this is the larger embed website that appears when the "show____" functions are called-->
+    <div>
+      <embed id="bigReDr" class="embeddedstyle" type="text/html" src="recurringDream copy.html">
+    </div>
+    <div>
+      <embed id="bigAbout" class="embeddedstyle" type="text/html" src="about_me_project copy.html" >
+    </div>  
+    <div>
+      <embed id="bigBeluga" class="embeddedstyle" type="text/html" src="favorite_animal_project copy.html" >
+    </div> 
+    <div>
+      <embed id="bigLightPo" class="embeddedstyle" type="text/html" src="environmental_call_to_action copy.html" >
+    </div> 
+    <div>
+      <embed id="bigCollectors" class="embeddedstyle" type="text/html" src="collectors_guide_main copy.html" >
+    </div>
+    <div> 
+      <embed id="bigSpringtime" class="embeddedstyle" type="text/html" src="springtime_home copy.html" >
+    </div> 
+    <div> 
+      <embed id="bigFour" class="embeddedstyle" type="text/html" src="fourcolortheorem.html">
+    </div>
+    <div> 
+      <embed id="bigBuzzfeed" class="embeddedstyle" type="text/html" src="B copy.html">
+    </div>
+    <div> 
+      <embed id="bigCitations" class="embeddedstyle" type="text/html" src="finalcitations.html">
+    </div>
+  </body>
+
+
+<script>
+//function makes the title, intro, and main buttons disappear when any main button is clicked
+  function openPage() {
+      var x = document.getElementById("mainButtons");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+    }
+    var x = document.getElementById("displayTitle");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+    }
+  }
+
+//these functions make the embedded websites appear when the corresponding button is clicked. It also makes the "back" button appear with the embedded site
+  function showRecurring() {
+    document.getElementById("bigReDr").style.display = "block";
+    document.getElementById("displayBack").style.display = "block";
+    document.getElementById("describeReDr").style.display = "block";
+
+  }
+
+  function showAbout() {
+    document.getElementById("bigAbout").style.display = "block";
+    document.getElementById("displayBack").style.display = "block";
+    document.getElementById("describeAbout").style.display = "block";
+  }
+
+  function showBeluga() {
+    document.getElementById("bigBeluga").style.display = "block";
+    document.getElementById("displayBack").style.display = "block";
+    document.getElementById("describeBeluga").style.display = "block";
+  }
+
+  function showLightPo() {
+    document.getElementById("bigLightPo").style.display = "block";
+    document.getElementById("displayBack").style.display = "block";
+    document.getElementById("describeLiPo").style.display = "block";
+  }
+
+  function showCollectors() {
+  document.getElementById("bigCollectors").style.display = "block";
+  document.getElementById("displayBack").style.display = "block";
+  document.getElementById("describeCollectors").style.display = "block";
+  }
+
+  function showSpringtime() {
+  document.getElementById("bigSpringtime").style.display = "block";
+  document.getElementById("displayBack").style.display = "block";
+  document.getElementById("describeSpringtime").style.display = "block";
+  }
+
+  function showFour() {
+  document.getElementById("bigFour").style.display = "block";
+  document.getElementById("displayBack").style.display = "block";
+  document.getElementById("describeFour").style.display = "block";
+  }
+
+  function showBuzzfeed() {
+  document.getElementById("bigBuzzfeed").style.display = "block";
+  document.getElementById("displayBack").style.display = "block";
+  document.getElementById("describeBuzzfeed").style.display = "block";
+  }
+
+  function showCitations() {
+  document.getElementById("bigCitations").style.display = "block";
+  document.getElementById("displayBack").style.display = "block";
+  }
+
+//function makes all of the buttons reappear, turning the page to its original form
+   function letsGoBack() {
+    document.getElementById("bigReDr").style.display = "none";
+    document.getElementById("bigAbout").style.display = "none";
+    document.getElementById("bigBeluga").style.display = "none";
+    document.getElementById("bigLightPo").style.display = "none";
+    document.getElementById("bigCollectors").style.display = "none";
+    document.getElementById("bigSpringtime").style.display = "none";
+    document.getElementById("bigFour").style.display = "none";
+    document.getElementById("bigBuzzfeed").style.display = "none";
+    document.getElementById("bigCitations").style.display = "none";
+
+    document.getElementById("displayTitle").style.display = "block";
+    document.getElementById("mainButtons").style.display = "block";
+
+    document.getElementById("displayBack").style.display = "none";
+    document.getElementById("describeReDr").style.display = "none";
+    document.getElementById("describeAbout").style.display = "none";
+    document.getElementById("describeBeluga").style.display = "none";
+    document.getElementById("describeLiPo").style.display = "none";
+    document.getElementById("describeCollectors").style.display = "none";
+    document.getElementById("describeSpringtime").style.display = "none";
+    document.getElementById("describeBuzzfeed").style.display = "none";
+    document.getElementById("describeFour").style.display = "none";
+
+
+  }
+
+//The parameter, "h" determines how many hearts there are AKA the number displayed
+  class Love {
+    constructor(h) {
+      this.hearts = h;
+    }
+// "return" calls the output to the page
+    getHearts() {
+      return this.hearts;
+    }
+    addHeart() {
+      this.hearts = this.hearts+1;
+    }
+  }
+
+//this is the object. When the bear is clicked, the roar function is called, which adds 1 to the hearts value
+  const bear = new Love(0);
+  document.getElementById("2").innerHTML = bear.getHearts();
+
+  function roar() {
+    bear.addHeart();
+    document.getElementById("2").innerHTML = bear.getHearts();
+  }
+
+  </script>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bearcode.CSS">
+</head>
+<body>
+	<img id="1" onclick="roar()" src="bear.webp">
+	<p id="2"></p>
+
+
+</body>
+
+<script type="text/javascript">
+	
+	class Love {
+// parameters of the following objects
+		constructor(h) {
+			this.hearts = h;
+		}
+// "return" calls the output to the page
+		getHearts() {
+			return this.hearts;
+		}
+
+		addHeart() {
+			this.hearts = this.hearts+1;
+		}
+	}
+
+//.objects using const
+
+	const bear = new Love(0);
+	document.getElementById("2").innerHTML = bear.getHearts();
+
+	function roar() {
+		bear.addHeart();
+		document.getElementById("2").innerHTML = bear.getHearts();
+	}
+
+</script>
+
+</html>

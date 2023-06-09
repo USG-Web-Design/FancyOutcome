@@ -1,0 +1,177 @@
+body {
+  font-family: CourierNewPS-BoldMT;
+  background-color: whitesmoke;
+}
+
+
+p {
+  text-align: center;
+  color: #49177F;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+  color: #49177F;
+}
+
+ul {
+  line-height: 2;
+  float: left;
+}
+/*the position of the navigation bar is fixed to the top of the page. This means if you scroll down the bar will stay at the top of the page. */
+.navbar {
+  overflow: hidden;
+  background-color: #black;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 50px; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: rebeccapurple;
+  color: whitesmoke;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+.pageback {
+  background-color: whitesmoke;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("main copy.jpg");
+
+  /* Add the blur effect */
+  filter: blur(px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background: linear-gradient(90deg,purple, black, #6B6CFC, purple, white, purple, black, purple);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+  animation: animate 10s linear infinite;
+  background-size: 400%;
+  color: whitesmoke;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+}
+
+/*the color changing animation works because the color of the text is a zoomed in color gradient. The animation moves the color gradient to the right, which displays the rest of the colors. */
+@keyframes animate {
+  0% {background-position: 0%}
+  100% {background-position: 400%}
+}
+
+.treeani {
+  background-image: url("whitetree copy.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display:block;
+  transition: background-image 2s;
+  float: left;
+}
+
+.treeani:hover {
+  background-image: url("pinktree copy.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/* these classes control the left and right columns of the Nature and Entertainment pages. */
+
+.div1 {
+  width: 500px;
+  height: 600px;
+  border: 5px solid #49177F;
+  float: right;
+  padding: 20px;
+}
+.div2 {
+  width: 500px;
+  height: 600px;
+  border: 5px solid #49177F;
+  float: left;
+  padding: 20px;
+}
+
+.pictures {
+  width: 500px;
+  height: 600px;
+}
+/*animation for concert pictures slideshow*/
+
+@keyframes slideshow {
+  0% {background-image: url("IMG_4139 copy.jpeg")}
+  33% {background-image: url("IMG_9472 copy.JPG")}
+  66% {background-image: url("IMG_2931 copy.jpeg")}
+  100% {background-image: url("IMG_4139 copy.jpeg")}
+}
+
+.concertslide {
+  background-image: url("IMG_4139 copy.jpeg");
+  height: 600px;
+  width:500px;
+  object-fit: fill;
+  animation-name: slideshow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+
+}
+

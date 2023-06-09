@@ -1,0 +1,17 @@
+/*I used these CSS funtions to control font, color, text alignment, etc. */
+
+body {
+	font-family: DINAlternate-Bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.title {
+	font-family: ComicSansMS-Bold;
+}
+
+.blue {
+	color: darkblue;
+}

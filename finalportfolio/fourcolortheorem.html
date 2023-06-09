@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Four Color Theorem</title>
+</head>
+
+<style>
+/*Here is the s */
+	body {
+		background-color: antiquewhite;
+		font-family: LiHei Pro;
+		margin: 5%;
+		border-style: solid;
+		border-color: black;
+		border-width: 7px;
+		padding: 50px;
+	}
+
+	.bg-text {
+	  background: linear-gradient(90deg, red, blue, green, yellow, red);
+	  -webkit-text-fill-color:transparent;
+	  -webkit-background-clip: text;
+	  animation: animate 20s linear infinite;
+	  background-size: 400%;
+	  color: whitesmoke;
+	  font-weight: bold;
+	  letter-spacing: 3px;
+	  top: 10%;
+	  left: 50%;
+	  z-index: 2;
+	  padding: 10px;
+	  text-align: center;
+	  font-size: 50px;
+	}
+
+	/* This is the keyframes for the color changing animation. 
+	As you can see, it changes the background position from 0% to 400% which moves the position of the "background" from left to right, making it look like the text is changing color. */
+
+	@keyframes animate {
+	 0% {background-position: 0%}
+	 100% {background-position: 400%}
+	}
+
+	p {
+		line-height: 30px;
+	}
+
+	.picture {
+		width:70%;
+		margin-left: 15%;
+	}
+
+	.coloring {
+		width: 30%;
+		padding:0%;
+		height: 400px;
+	}
+
+</style>
+
+
+<body>
+	<!--Same color changing animation as buzzfeed quiz and springtime project.-->
+	<h1 class="bg-text">The Four Color Theorem</h1>
+	<p>The Four Color Theorem states that no more than four colors are needed to fill in the shapes within a map, with each adjecent side being a different color. Sounds pretty simple right? Well, the Four Color Conjecture was actually discovered in 1852 by Francis Guthrie, but did not become a proof until 1976.</p>
+
+	<br><br><br><img class="picture" src="fourcolors.png"><br><br><br>
+
+	<h2>How does it work?</h2>
+
+	<p>Watch this quick video to learn more about the Four Color Theorem! The video explains the mathematical proofs and history behind the theorem.</p>
+	<!--embedded youtube video-->
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/siFuRrhb-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	<br><br>
+
+	<h2>Try it Yourself!</h2>
+	<p>Try the theorem out yourself! Pick four colors and try the theorem on any of the coloring pages below.</p>
+
+	<img class="coloring" src="coloring1.jpeg">
+	<img class="coloring" src="coloring2.jpeg">
+	<img class="coloring" src="coloring3.jpeg">
+	<br><br>
+
+	<!--hyperlinks-->
+	<a href="https://www.bestcoloringpagesforkids.com/wp-content/uploads/2018/06/Free-Pattern-Coloring-Pages.jpg">Coloring Page 1</a>
+	<br><br>
+	<a href="https://coloringonly.com/images/imgcolor/Free-Printable-Africa-Map-coloring-page.jpg">Coloring Page 2</a>
+	<br><br>
+	<a href="https://iheartcraftythings.com/wp-content/uploads/2021/12/Solar-System-4.jpg">Coloring Page 3</a>
+
+</body>
+</html>
